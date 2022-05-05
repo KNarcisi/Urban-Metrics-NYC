@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[7]:
-
 
 import numpy as np
 import pandas as pd
@@ -30,7 +25,6 @@ df['LINE'] = df['LINE'].str.replace('e', 'E')
 print(df['LINE'].value_counts())
 
 
-
 # storing value count of entrances to a dictionary
 counts = df['LINE'].value_counts().to_dict()
 
@@ -47,9 +41,6 @@ plt.ylabel("Number of Entrances")
 
 
 
-# In[2]:
-
-
 #Now make a pie chart
 
 df2 = df.value_counts('LINE')
@@ -61,20 +52,6 @@ ax=df2.plot.pie(explode=explode, figsize=(10,10),startangle=15, shadow=True,
                                    colors=colors,pctdistance=0.8)
 plt.title('Number of Entrances per Line', color='black', size=18)
 
-
-plt.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[3]:
-
-
-counts = df['LINE'].value_counts().to_dict()
 
 # Get the keys from dictionary and store them in a list
 labels = list(counts.keys())
@@ -91,16 +68,6 @@ plt.pie(values, labels=labels, explode=explode, startangle=15, shadow=True,
 explode=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.1,0.5,0.7,0.9,1)
 plt.title('Number of Entrances per Line', color='black', size=18)
 plt.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
