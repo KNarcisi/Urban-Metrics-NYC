@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[122]:
-
 
 import pandas as pd
 import scipy
@@ -28,17 +23,6 @@ end_date = '2022-04-26'
 mask = (df['DATE'] >= start_date) & (df['DATE'] <= end_date)
 df_vaccine = df.loc[mask]
 display(len(df_vaccine))
-
-
-
-
-
-
-
-
-# In[137]:
-
-
 
 # read second dataset on case rate
 df2 = pd.read_csv('https://raw.githubusercontent.com/nychealth/coronavirus-data/master/trends/cases-by-day.csv', sep=',',na_values='')
@@ -78,31 +62,8 @@ plt.ylabel('Rate', fontsize=20)
 plt.legend(fontsize=15)
 
 
-# In[ ]:
 
 
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
