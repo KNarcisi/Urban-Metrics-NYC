@@ -69,5 +69,45 @@ explode=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.1,0.5,0.7,0.9,1)
 plt.title('Number of Entrances per Line', color='black', size=18)
 plt.show()
 
+# edit column of geological location for easier mapping by 
+# removing characters with known positions using lamda function
+
+df['the_geom'] = df['the_geom'].map(lambda x: str(x)[7:-1])
+df.head()
+
+
+
+# add two new columns to the existing dataframe
+# by default splitting is done on the basis of single space
+
+df[['longitude','latitude']]=df.the_geom.str.split(" ",expand=True)
+print(df.info)
+
+# creating a map of NYC
+map_nyc=folium.Map(location=[40.730610,-73.935242],zoom_start=12,control_scale=True)
+
+# convert geological info into float
+df['latitude'] = df['latitude'].astype(float)
+df['longitude'] = df['longitude'].astype(float)
+
+# create a list
+heat_df = df[['latitude', 'longitude']]
+
+# plot list into heat map
+HeatMap(heat_df).add_to(map_nyc)
+
+map_nyc
+
+# make another map
+map_nyc2=folium.Map(location=[40.730610,-73.935242],zoom_start=12,control_scale=True)
+
+
+# use for loop to plot stations 
+for i in range(0, len(df)):
+    folium.Marker([df.iloc[i]['latitude'], df.iloc[i]['longitude']],
+                 popup=df.iloc[i]['LINE'],icon=folium.Icon(color='green')).add_to(map_nyc2)
+   
+map_nyc2
+
 
 
