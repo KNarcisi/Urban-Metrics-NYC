@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[126]:
-
 
 import numpy as np
 import pandas as pd
@@ -21,8 +16,6 @@ df2=pd.read_csv(url2,delimiter=',')
 url3='https://raw.githubusercontent.com/nychealth/coronavirus-data/master/trends/cases-by-day.csv'
 df3=pd.read_csv(url3,delimiter=',')
 
-
-# In[124]:
 
 
 # assign variable to column
@@ -46,11 +39,7 @@ plt.show()
 
 
 
-# In[154]:
-
-
-# fill in missing dates 
- 
+# fill in missing dates  
 # Convert string to datetime     
 df['diagnosis_date'] = pd.to_datetime(df['diagnosis_date'])
 
@@ -68,10 +57,6 @@ print(len(new_df.date))
 
 
 
-
-# In[155]:
-
-
 # Creating new column Day to both datasets to plot
 new_df = new_df.reset_index()
 new_df['Day'] = new_df.index + 1
@@ -80,9 +65,6 @@ print(new_df)
 df3=df3.reset_index()
 df3['Day']=df3.index + 1
 print(df3)
-
-
-# In[181]:
 
 
 # assigning variables to columns day and daily total to plot
@@ -106,9 +88,6 @@ plt.grid(True)
 plt.show()
 
 
-
-
-# In[ ]:
 
 
 
