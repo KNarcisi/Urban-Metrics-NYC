@@ -33,9 +33,9 @@ NYC Department of Health and Mental Hygiene https://www1.nyc.gov/site/doh/index.
 
 Data Sets Used:
 
-nychealth/covid-vaccine-data/doses/doses-by-day | Contains accumulative daily sum of 1st and 2nd Covid vaccine admisinstered 
+nychealth/covid-vaccine-data/doses/doses-by-day | Contains accumulative daily sum of 1st and 2nd Covid vaccine administered
 
-nychealth/coronavirus-data/trends/cases-by-day | Contains Covid-19 daily case rate in NYC
+nychealth/coronavirus-data/trends/cases-by-day | Contains COVID-19 daily case rate in NYC
 
 nychealth/monkeypox-data/main/trends/cases-by-day. | Has accumulative ongoing daily totals of Monkey Pox case rate in NYC
 
