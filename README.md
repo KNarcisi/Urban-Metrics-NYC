@@ -13,7 +13,7 @@
 <h3>Projects:</h3>
 
 
-<b>Covid_Data </b> : Find correlation with NYC vaccine and case rate, correlation between rate of first and second vaccine being administered, plotted multi- series line chart to display shift/pattern of case rate and vaccination rate of dose 1 & 2 over a period of time. 
+<b>Vaccine/Case_Rate </b> : Find correlation with NYC vaccine and case rate. Plotting multi- series line graph to visualize trends between rate of first and second vaccine being administered and display pattern of case rate and vaccination rate of dose 1 & 2 over a period of time. 
 
 <b>Subway_Data</b> : Extracting frequency values of NYC subway entrances per train line and creating visualizations with percentages.
 
