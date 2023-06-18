@@ -21,24 +21,5 @@
 <b>Water_NYC</b> : Utilizing The Department of Environmental Protection (DEP) dataset on annual NYC drinking water consumption. Calculating correlation between population based on NYC Census and annual water comsumption in millions of gallons per day for each year. 
 
 
-<hr>
 
-Data received from:
-
-NYC OpenData https://opendata.cityofnewyork.us
-
-NYC Department of Health and Mental Hygiene https://www1.nyc.gov/site/doh/index.page
-
-
-
-
-Data Sets Used:
-
-nychealth/covid-vaccine-data/doses/doses-by-day | Contains accumulative daily sum of 1st and 2nd Covid vaccine administered
-
-nychealth/coronavirus-data/trends/cases-by-day | Contains COVID-19 daily case rate in NYC
-
-nychealth/monkeypox-data/main/trends/cases-by-day. | Has accumulative ongoing daily totals of Monkey Pox case rate in NYC
-
-https://data.cityofnewyork.us/Environment/Water-Consumption-in-the-City-of-New-York/ia2d-e54m
 
