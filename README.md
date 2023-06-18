@@ -1,4 +1,4 @@
-<h1 align="center"> Quantify NYC </h1>
+<h1 align="center"> Quantifying Urban Dynamics for Public Health Insights </h1>
 
 
 <p align="center">
@@ -6,7 +6,7 @@
 
 
 
-<p align="center"><i>This is an ongoing passion project where I take various different data sets pertaining to NYC and create visualizations.</i></p>
+<p align="center"><i>Urban Metrics NYC is a dynamic repository and ongoing passion project that combines my expertise as a former student studying biomedical informatics with my current role at a renewable energy development company involved in city planning and policy. It embodies my commitment to leveraging interdisciplinary knowledge and data-driven insights to generate positive change in urban environments. Serving as a platform for exploring the quantitative landscape of urban living, Urban Metrics NYC sheds light on crucial challenges and opportunities faced by cities. Through this project, I strive to uncover valuable insights that inform evidence-based strategies, empower decision-makers, and contribute to building healthier, more sustainable, and equitable cities for all.</i></p>
 
 <hr>
 
